@@ -1,0 +1,58 @@
+{  
+  "monthlyTotals": {
+    "year": 2026,
+    "produced": [
+      {
+        "month": 1,
+        "total": 8500
+      },
+      {
+        "month": 2,
+        "total": 9200
+      },
+      {
+        "month": 3,
+        "total": 7800
+      }
+    ],
+    "repaid": [
+      {
+        "month": 1,
+        "total": 7300
+      },
+      {
+        "month": 2,
+        "total": 8100
+      },
+      {
+        "month": 3,
+        "total": 6900
+      }
+    ]
+  },
+  "productions": [
+    {
+      "id": "P-001",
+      "date": "2026-01-29",
+      "hospital": "Hospital Cassems",
+      "amount": 1200.5,
+      "description": "Consulta"
+    },
+    {
+      "id": "P-002",
+      "date": "2026-01-25",
+      "hospital": "Hospital Proncor",
+      "amount": 3400,
+      "description": "Procedimento"
+    }
+  ],
+  "repayments": [
+    {
+      "id": "R-001",
+      "date": "2026-01-30",
+      "hospital": "Hospital Cassems",
+      "amount": 900,
+      "description": "Repasse"
+    }
+  ]
+}
