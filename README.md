@@ -24,29 +24,31 @@ Observação:
 Caso abra o projeto no Visual Studio, pode ser solicitada a workload “ASP.NET and web development”.
 
 Como rodar o Backend
-1) Acessar a pasta do projeto
+1) Acessar a pasta do projeto:
 
 No terminal, navegue até a pasta onde está localizado o arquivo .csproj.
 
 Exemplo:
-
+```bash
 cd "ASP.NET core/WebApplication1"
-
-2) Restaurar dependências
+```
+2) Restaurar dependências:
+```bash
 dotnet restore
-
-3) Executar a API
+```
+3) Executar a API:
+```bash
 dotnet run
-
+```
 
 A API será iniciada na porta 5143.
 
 URLs Importantes
 
 Swagger (documentação e testes das rotas):
-
+```bash
 http://localhost:5143/swagger
-
+```
 Acesso via celular (React Native)
 
 O computador e o celular devem estar conectados à mesma rede Wi-Fi.
@@ -80,9 +82,9 @@ Instale o Node.js (versão LTS).
 2) Expo CLI
 
 Instale globalmente:
-
+```bash
 npm install -g expo
-
+```
 3) Expo Go (caso utilize celular físico)
 
 Instale o aplicativo Expo Go (Android ou iOS).
@@ -92,9 +94,9 @@ Configuração da API
 O frontend consome a API local na porta 5143.
 
 Nos arquivos de tela (index.tsx, explore.tsx, etc.), existe uma configuração semelhante a:
-
+```bash
 const API_BASE_URL = "http://192.168.X.X:5143";
-
+```
 Usando Emulador
 
 Android Emulator:
@@ -109,9 +111,9 @@ http://localhost:5143
 Usando Celular Físico
 
 Utilize o IP do computador na rede local, por exemplo:
-
+```bash
 const API_BASE_URL = "http://192.168.5.161:5143";
-
+```
 
 Observação:
 Nunca utilize localhost no celular, pois ele aponta para o próprio dispositivo.
@@ -120,14 +122,18 @@ Como rodar o Frontend
 
 Certifique-se de ter ajustado o API_BASE_URL corretamente.
 
-1) Acessar a pasta do frontend
+1) Acessar a pasta do frontend:
+```bash
 cd seiwa-app
-
-2) Instalar dependências
+```
+2) Instalar dependências:
+```bash
 npm install
-
-3) Executar o aplicativo
+```
+3) Executar o aplicativo:
+```bash
 npx expo start -c
+```
 
 
 Isso abrirá o Metro Bundler no navegador e exibirá um QR Code.
@@ -140,10 +146,3 @@ Abra o aplicativo Expo Go
 
 Escaneie o QR Code exibido no navegador
 
-Se quiser, posso:
-
-reduzir ainda mais o texto
-
-adaptar o README para padrão corporativo ou acadêmico
-
-separar Backend e Frontend em arquivos diferentes (README_BACKEND.md, README_FRONTEND.md)
